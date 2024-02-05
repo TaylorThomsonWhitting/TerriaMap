@@ -5,6 +5,11 @@
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
+    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1ZWI4MjAyYS01M2IyLTQ1YzItOTBlNi1hYmY1ODA2MzAzMmUiLCJpZCI6MTg1MTkwLCJpYXQiOjE3MDI5NDMwMDV9.aX8ch3RbTKu-AZq_x6d-1nzfe4ICO7nCFBS52-_g1Jk",
+    "bingMapsKey": "AnegBGc_jfuTLGsczqZPMqLA_0ayOewcn1NR-E22JZjUamyiJqPYALWy1y0AUTcE",
+    "hideTerriaLogo": true,
+    "storyEnabled": false,
+    "shareEnabled": false,
     // Log ConsoleAnalytics events to console
     // logToConsole: true,
     /* Text that appears at the bottom of the map */
@@ -37,15 +42,15 @@
             link: "http://www.example.com"
         },*/
     // This is used in various text messages. You should also set <title> in index.html
-    "appName": "Terria Map",
+    "appName": "TTW Digital Twins",
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "",
-      "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+      "<a target=\"_blank\" style=\"margin: 0 10px 10px 0px;\" href=\"https://hub.ttw.com.au/models\"><img src=\"images/ttw-models-logo.png\" height=\"72\"  title=\"Version: {{version}}\" /></a>",
       ""
     ],
     // Shown when things go wrong.
-    "supportEmail": "help@example.com",
+    "supportEmail": "hub@ttw.com.au",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this

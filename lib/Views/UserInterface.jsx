@@ -32,7 +32,7 @@ export default function UserInterface(props) {
 
   return (
     <StandardUserInterface {...props} version={version}>
-      <MenuLeft>
+      {/* <MenuLeft>
         {aboutButtonHrefUrl ? (
           <MenuItem
             caption="About"
@@ -43,7 +43,7 @@ export default function UserInterface(props) {
         {relatedMaps && relatedMaps.length > 0 ? (
           <RelatedMaps relatedMaps={relatedMaps} />
         ) : null}
-      </MenuLeft>
+      </MenuLeft> */}
       <ExperimentalMenu>
         {/* <If condition={isBrowserSupportedAV()}>
           <SplitPoint
