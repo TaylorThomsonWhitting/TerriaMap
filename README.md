@@ -1,3 +1,26 @@
+# TTW.DigitalTwins
+
+## Build and Develop
+
+Refer to [Terria Development Environment](https://docs.terria.io/guide/contributing/development-environment/) page for details.
+
+TTW.DigitalTwins depends on a custom version of terriajs. To develop locally clone the TaylorThomsonWhitting/terriajs repo into a `packages` directory. The version of the `packages/terriajs` package must match the version specifiec in the TTW.DigitalTwin `package.json`.
+Running `yarn install` should create a symlink to the `package/terriajs` package.
+
+Running `npm run gulp` builds both terriajs and TTW.DigitalTwins.
+
+Running `npm run start` serves the site at localhost:3001
+
+Running `npm run hot` serves the site at localhost:3003 and hot reloads the app when changes are made to either terriajs or TTW.DigitalTwins.
+
+## Deploy
+
+Use `azcopy` to copy the `wwwroot` folder into the `ttwdigitaltwin/$web` Azure Storage account.
+
+```bash
+azcopy copy ./wwwroot/* '<SAS URL with write permissions>' --recursive=true --check-length=false
+```
+
 # Terria Map
 
 [![Build Status](https://github.com/TerriaJS/TerriaMap/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/TerriaJS/TerriaMap/actions/workflows/ci.yml) [![Docs](https://img.shields.io/badge/docs-online-blue.svg)](https://docs.terria.io/)
