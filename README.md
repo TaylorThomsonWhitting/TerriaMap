@@ -4,12 +4,12 @@
 
 Refer to [Terria Development Environment](https://docs.terria.io/guide/contributing/development-environment/) page for details.
 
-TTW.DigitalTwins depends on a custom version of terriajs. To develop locally clone the TaylorThomsonWhitting/terriajs repo into a `packages` directory. The version of the `packages/terriajs` package must match the version specifiec in the TTW.DigitalTwin `package.json`.
+TTW.DigitalTwins depends on a custom version of terriajs. To develop locally clone the TaylorThomsonWhitting/terriajs repo into a `packages` directory. The version of the `packages/terriajs` package must match the version specified in the TTW.DigitalTwin `package.json`.
 Running `yarn install` should create a symlink to the `package/terriajs` package.
 
 Running `npm run gulp` builds both terriajs and TTW.DigitalTwins.
 
-Running `npm run start` serves the site at localhost:3001
+Running `npm run start` serves the site at localhost:3001.
 
 Running `npm run hot` serves the site at localhost:3003 and hot reloads the app when changes are made to either terriajs or TTW.DigitalTwins.
 
