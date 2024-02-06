@@ -157,6 +157,10 @@ gulp.task(
   )
 );
 
+gulp.task("copy-serverconfig", function () {
+  return gulp.src("./serverconfig").pipe(gulp.dest("./wwwroot"));
+});
+
 gulp.task("copy-terriajs-assets", function () {
   var terriaWebRoot = path.join(getPackageRoot("terriajs"), "wwwroot");
   var sourceGlob = path.join(terriaWebRoot, "**");
@@ -342,7 +346,10 @@ gulp.task("terriajs-server", function (done) {
   });
 });
 
-gulp.task("build", gulp.series("copy-terriajs-assets", "build-app"));
+gulp.task(
+  "build",
+  gulp.series("copy-terriajs-assets", "build-app", "copy-serverconfig")
+);
 gulp.task("release", gulp.series("copy-terriajs-assets", "release-app"));
 gulp.task("watch", gulp.parallel("watch-terriajs-assets", "watch-app"));
 // Run render-index before starting terriajs-server because terriajs-server won't
