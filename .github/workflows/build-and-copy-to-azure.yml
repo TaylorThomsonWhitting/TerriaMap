@@ -1,0 +1,50 @@
+name: Build and Copy to Azure
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Build and Copy to Azure
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+          
+      - name: Set up Node.js for NPM
+        uses: actions/setup-node@v4
+        with:
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install yarn
+        run: npm install -g yarn@^1.19.0
+
+      - name: Install dependencies
+        run: yarn install --ignore-engines
+        env:
+          NODE_OPTIONS: "--max_old_space_size=8192"
+
+      - name: Lint and build terriajs
+        run: yarn gulp lint release
+        env:
+          NODE_OPTIONS: "--max_old_space_size=8192"
+
+      - name: Copy to Azure App Service
+        # You may pin to the exact commit or the version.
+        # uses: SamKirkland/FTP-Deploy-Action@8a24039354ee91000cb948cb4a1dbdf1a1b94a3c
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # ftp server
+          server: ${{ secrets.AZURE_FTP_ENDPOINT }}
+          # ftp username
+          username: ${{ secrets.AZURE_FTP_USERNAME }}
+          # ftp password
+          password: ${{ secrets.AZURE_FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./wwwroot/
+          server-dir: /site/wwwroot/
+          
