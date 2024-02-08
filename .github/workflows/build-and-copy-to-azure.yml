@@ -22,7 +22,20 @@ jobs:
 
       - name: Install yarn
         run: npm install -g yarn@^1.19.0
-
+          
+      - name: Create .npmrc
+        run: |
+          echo "registry=https://pkgs.dev.azure.com/TaylorThomsonWhitting/_packaging/TaylorThomsonWhitting/npm/registry/" >> .npmrc
+          echo "always_auth=true" >> .npmrc
+          echo "//pkgs.dev.azure.com/TaylorThomsonWhitting/_packaging/TaylorThomsonWhitting/npm/registry/:username=ttw" >> .npmrc
+          echo "//pkgs.dev.azure.com/TaylorThomsonWhitting/_packaging/TaylorThomsonWhitting/npm/registry/:_password=${{ secrets.AZURE_ACCESS_TOKEN }}" >> .npmrc
+          echo "//pkgs.dev.azure.com/TaylorThomsonWhitting/_packaging/TaylorThomsonWhitting/npm/registry/:email=hub@ttw.com.au" >> .npmrc
+          echo "//pkgs.dev.azure.com/TaylorThomsonWhitting/_packaging/TaylorThomsonWhitting/npm/:username=ttw" >> .npmrc
+          echo "//pkgs.dev.azure.com/TaylorThomsonWhitting/_packaging/TaylorThomsonWhitting/npm/:_password=${{ secrets.AZURE_ACCESS_TOKEN }}" >> .npmrc
+          echo "//pkgs.dev.azure.com/TaylorThomsonWhitting/_packaging/TaylorThomsonWhitting/npm/:email=hub@ttw.com.au" >> .npmrc
+        env:
+          AZURE_ACCESS_TOKEN: ${{ secrets.AZURE_ACCESS_TOKEN }}
+          
       - name: Install dependencies
         run: yarn install --ignore-engines
         env:
