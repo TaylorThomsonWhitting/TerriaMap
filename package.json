@@ -2,7 +2,7 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/terriajs",
+      "packages/@ttw/terriajs",
       "packages/cesium",
       "packages/terriajs-server",
       "packages/plugin-api",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/TerriaJS/TerriaMap"
+    "url": "http://github.com/TaylorThomsonWhitting/TTW.DigitalTwins"
   },
   "dependencies": {
     "terriajs-plugin-api": "0.0.1-alpha.6",
@@ -74,7 +74,7 @@
     "semver": "^5.0.0",
     "style-loader": "^0.23.1",
     "svg-sprite-loader": "4.1.3",
-    "terriajs": "8.4.0-ttw-1",
+    "@ttw/terriajs": "8.4.0-ttw-1",
     "terriajs-cesium": "1.92.0-tile-error-provider-fix-2",
     "ts-loader": "^5.3.3",
     "typescript": "^4.9.5",
