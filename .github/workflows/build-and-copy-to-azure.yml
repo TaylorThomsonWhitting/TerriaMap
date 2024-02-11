@@ -25,6 +25,7 @@ jobs:
           
       - name: Create .npmrc
         run: |
+          echo "@ttw:registry=https://pkgs.dev.azure.com/TaylorThomsonWhitting/_packaging/TaylorThomsonWhitting/npm/registry/" >> .npmrc
           echo "registry=https://pkgs.dev.azure.com/TaylorThomsonWhitting/_packaging/TaylorThomsonWhitting/npm/registry/" >> .npmrc
           echo "always_auth=true" >> .npmrc
           echo "//pkgs.dev.azure.com/TaylorThomsonWhitting/_packaging/TaylorThomsonWhitting/npm/registry/:username=TaylorThomsonWhitting" >> .npmrc
