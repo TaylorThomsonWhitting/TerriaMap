@@ -26,7 +26,7 @@ jobs:
         # protocol to deploy with - ftp, ftps, or ftps-legacy
         protocol: ftps
         # Folder to upload from, must end with trailing slash /
-        local-dir: ./wwwroot/
+        # local-dir: ./wwwroot/
         # Path to upload to on the server. Must end with trailing slash /
         server-dir: ./site/wwwroot/
         # Path and name of the state file - this file is used to track which files have been deployed
