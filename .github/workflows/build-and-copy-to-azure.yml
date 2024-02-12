@@ -61,5 +61,5 @@ jobs:
           password: ${{ secrets.AZURE_FTP_PASSWORD }}
           protocol: ftps
           local-dir: ./wwwroot/
-          server-dir: /site/wwwroot/
+          server-dir: ./site/wwwroot/
           
