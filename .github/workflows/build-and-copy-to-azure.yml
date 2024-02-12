@@ -61,7 +61,7 @@ jobs:
           password: ${{ secrets.AZURE_FTP_PASSWORD }}
           protocol: ftps
           local-dir: ./wwwroot/
-          server-dir: ./site/wwwroot/wwwwoot/
+          server-dir: ./site/wwwroot/wwwoot/
     env:
       AZURE_FTP_IP: ${{ secrets.AZURE_FTP_IP }}
       AZURE_FTP_USERNAME: ${{ secrets.AZURE_FTP_USERNAME }}
