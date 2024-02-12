@@ -43,4 +43,8 @@ jobs:
         # security: # optional
         # # Timeout in milliseconds for FTP operations
         # timeout: # optional
+    env:
+      AZURE_FTP_ENDPOINT: ${{ secrets.AZURE_FTP_ENDPOINT }}
+      AZURE_FTP_USERNAME: ${{ secrets.AZURE_FTP_USERNAME }}
+      AZURE_FTP_PASSWORD: ${{ secrets.AZURE_FTP_PASSWORD }}
             
