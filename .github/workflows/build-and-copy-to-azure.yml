@@ -54,7 +54,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           # ftp server
-          server: ${{ secrets.AZURE_FTP_ENDPOINT }}
+          server: ${{ secrets.AZURE_FTP_IP }}
           # ftp username
           username: ${{ secrets.AZURE_FTP_USERNAME }}
           # ftp password
