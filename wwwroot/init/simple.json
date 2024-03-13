@@ -7,25 +7,25 @@
   },
   "catalog": [
     {
+      "id": "rainfall",
+      "name": "Rainfall Data",
+      "type": "group",
+      "members": [
+        {
+          "id": "nsw_rainfall",
+          "name": "NSW Rainfall",
+          "type": "geojson",
+          "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw.geojson",
+          "opacity": 0.3
+        }
+      ]
+    },
+    {
       "id": "ZIdekvc10z",
       "type": "wms-group",
       "name": "Test",
       "url": "https://programs.communications.gov.au/geoserver/ows",
       "members": [
-        {
-          "id": "rainfall",
-          "name": "Rainfall Data",
-          "type": "group",
-          "members": [
-            {
-              "id": "nsw_rainfall",
-              "name": "NSW Rainfall",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw.geojson",
-              "opacity": 0.3
-            }
-          ]
-        },
         {
           "type": "wms",
           "localId": "mybroadband%3AMyBroadband_ADSL_Availability",
