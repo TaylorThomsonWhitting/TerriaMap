@@ -1,4 +1,5 @@
 # TTW.DigitalTwins
+
 [![Build and Copy to Azure](https://github.com/TaylorThomsonWhitting/TTW.DigitalTwins/actions/workflows/build-and-copy-to-azure.yml/badge.svg)](https://github.com/TaylorThomsonWhitting/TTW.DigitalTwins/actions/workflows/build-and-copy-to-azure.yml)
 
 ## Build and Develop
@@ -11,6 +12,8 @@ An `.npmrc` file with the correct credentials and a scoped @ttw registry must be
 
 Running `yarn install` will automatically move the `terriajs` package from `node_modules/@ttw/terriajs` to `node_modules/terriajs` in order to ensure that relative paths are correct.
 
+If doing local development, yarn will attempt to create a symlink to the `terriajs` project in the `/packages` directory.
+
 Running `npm run gulp` builds both terriajs and TTW.DigitalTwins.
 
 Running `npm run start` serves the site at localhost:3001.
@@ -18,10 +21,13 @@ Running `npm run start` serves the site at localhost:3001.
 Running `npm run hot` serves the site at localhost:3003 and hot reloads the app when changes are made to either terriajs or TTW.DigitalTwins.
 
 ## Deploy
+
 ### Actions
+
 Any push to this repo will create a build that is copied to the terriajs-server instance on App Service via FTPS.
 
 ### Manual
+
 Use `azcopy` to copy the `wwwroot` folder into the `ttwdigitaltwin/$web` Azure Storage account.
 
 ```bash
