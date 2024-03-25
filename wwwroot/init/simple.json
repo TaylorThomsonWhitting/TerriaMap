@@ -7,6 +7,19 @@
   },
   "catalog": [
     {
+      "id": "google-tiles_group",
+      "name": "Google Tiles",
+      "type": "group",
+      "members": [
+        {
+          "id": "google-tiles",
+          "name": "Google Tiles",
+          "type": "3d-tiles",
+          "url": "https://tile.googleapis.com/v1/3dtiles/root.json?key=AIzaSyBTjpe8WUK0RVjH0TFnS91ZpzC2d-nNbR4"
+        }
+      ]
+    },
+    {
       "id": "rainfall",
       "name": "Rainfall Data",
       "type": "group",
