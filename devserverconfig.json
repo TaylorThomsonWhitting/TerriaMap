@@ -22,5 +22,6 @@
     "gov.uk",
     "gov.nz",
     "services.aremi.data61.io"
-  ]
+  ],
+  "httpAllowedHosts": ["localhost"]
 }
