@@ -24,7 +24,8 @@ Running `npm run hot` serves the site at localhost:3003 and hot reloads the app 
 
 ### Actions
 
-Any push to this repo will create a build that is copied to the terriajs-server instance on App Service via FTPS.
+Any push to this repo will trigger an Azure release pipeline that rebuilds TTW.DigitalTwins, @ttw/terriajs (if required), and redeploys the terriajs-server project.
+**Note:** The yarn.lock file should be present and up to date when deploying otherwise the yarn install step may fail.
 
 ### Manual
 

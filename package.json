@@ -92,7 +92,8 @@
     "docker-build-ci": "node ./deploy/docker/create-docker-context-for-node-components.js --build",
     "start": "terriajs-server --config-file devserverconfig.json",
     "gulp": "gulp",
-    "postinstall": "mv node_modules/@ttw/terriajs node_modules/terriajs && ln -sfn ../packages/@ttw/terriajs node_modules/terriajs",
+    "postinstall": "mv node_modules/@ttw/terriajs node_modules/terriajs && echo 'If developing locally you should run npm run devlink'",
+    "devlink": "ln -sfn ../packages/@ttw/terriajs node_modules/terriajs",
     "hot": "webpack-dev-server --inline --config buildprocess/webpack.config.hot.js --hot --host 0.0.0.0",
     "prettier": "prettier --write .",
     "prettier-check": "prettier --check ."
