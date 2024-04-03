@@ -9,7 +9,7 @@
     "bingMapsKey": "AnegBGc_jfuTLGsczqZPMqLA_0ayOewcn1NR-E22JZjUamyiJqPYALWy1y0AUTcE",
     "hideTerriaLogo": true,
     "storyEnabled": false,
-    "shareEnabled": false,
+    "shareEnabled": true,
     // Log ConsoleAnalytics events to console
     // logToConsole: true,
     /* Text that appears at the bottom of the map */

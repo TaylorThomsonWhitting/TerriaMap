@@ -12,13 +12,24 @@ An `.npmrc` file with the correct credentials and a scoped @ttw registry must be
 
 Running `yarn install` will automatically move the `terriajs` package from `node_modules/@ttw/terriajs` to `node_modules/terriajs` in order to ensure that relative paths are correct.
 
-If doing local development, yarn will attempt to create a symlink to the `terriajs` project in the `/packages` directory.
+If doing local development, yarn will attempt to create a symlink to the `terriajs` project in the `/packages` directory, **HOWEVER**, it will probably do it incorrectly, so it is best to run `npm run devlink` to ensure the symlink is correctly established.
 
 Running `npm run gulp` builds both terriajs and TTW.DigitalTwins.
 
 Running `npm run start` serves the site at localhost:3001.
 
 Running `npm run hot` serves the site at localhost:3003 and hot reloads the app when changes are made to either terriajs or TTW.DigitalTwins.
+
+## Pulling From Upstream (Updating TerriaJS)
+
+1. Fetch from terriajs upstream
+2. Preferably, merge a tagged commit into the `dev` branch.
+3. Ensure that the terriajs `package.json` file keeps `"name": "@ttw/terriajs"`.
+4. Match the `version` property in the terriajs `package.json` with the tagged version (or closest past version) and format it as `{version}-ttw-1`. e.g. `8.7.0-ttw-1`.
+5. Update the terriajs version in TTW.DigitalTwins `package.json` to match the version in step 4.
+6. Run `yarn install`.
+7. Some dependencies may be out of sync so you may need to run `(npx) gulp sync-terriajs-dependencies`. After this, re-run `yarn install`.
+8. Run `npm run gulp`.
 
 ## Deploy
 
