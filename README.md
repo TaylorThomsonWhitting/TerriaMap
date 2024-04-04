@@ -18,7 +18,7 @@ Running `npm run gulp` builds both terriajs and TTW.DigitalTwins.
 
 Running `npm run start` serves the site at localhost:3001.
 
-Running `npm run hot` serves the site at localhost:3003 and hot reloads the app when changes are made to either terriajs or TTW.DigitalTwins.
+Running `npm run hot` serves the site at localhost:3003 and hot reloads the app when changes are made to either terriajs or TTW.DigitalTwins. You should run `npm run start` in another process so that the hot reload server can locate the initialisiation files from localhost:3001.
 
 ## Pulling From Upstream (Updating TerriaJS)
 

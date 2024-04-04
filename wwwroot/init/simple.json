@@ -73,6 +73,7 @@
     }
   ],
   "viewerMode": "3d",
+  "hideBranding": false,
   "baseMaps": {
     "defaultBaseMapId": "basemap-positron",
     "previewBaseMapId": "basemap-positron"
