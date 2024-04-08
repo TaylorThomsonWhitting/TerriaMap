@@ -13,39 +13,17 @@
       "url": "https://ttwdigitaltwinsfunctions.azurewebsites.net/InitiateGoogleTile"
     },
     {
-      "id": "civil",
-      "name": "Civil",
+      "id": "vic",
+      "name": "Victoria",
       "type": "group",
-      "isOpen": true,
+      "isOpen": false,
       "members": [
         {
-          "id": "rainfall",
-          "name": "Rainfall Data",
-          "type": "group",
-          "isOpen": true,
-          "members": [
-            {
-              "id": "nsw_rainfall",
-              "name": "NSW Rainfall",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw.geojson",
-              "opacity": 0.3
-            },
-            {
-              "id": "vic_rainfall",
-              "name": "Victoria Rainfall",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/vic.geojson",
-              "opacity": 0.3
-            }
-          ]
-        },
-        {
-          "id": "nsw_geotech",
-          "name": "NSW Projects",
+          "id": "vic_rainfall",
+          "name": "Victoria Rainfall",
           "type": "geojson",
-          "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw_projects.geojson",
-          "opacity": 0.6
+          "url": "https://ttwhub.blob.core.windows.net/digtwins/vic.geojson",
+          "opacity": 0.3
         },
         {
           "type": "wms",
@@ -68,6 +46,34 @@
             "template": "{{PixelValue}} metres"
           },
           "id": "cXisE8D7"
+        },
+        {
+          "id": "vic_planning",
+          "name": "Vic Planning",
+          "type": "esri-group",
+          "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services"
+        }
+      ]
+    },
+    {
+      "id": "nsw",
+      "name": "NSW",
+      "type": "group",
+      "isOpen": false,
+      "members": [
+        {
+          "id": "nsw_rainfall",
+          "name": "NSW Rainfall",
+          "type": "geojson",
+          "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw.geojson",
+          "opacity": 0.3
+        },
+        {
+          "id": "nsw_geotech",
+          "name": "NSW Projects",
+          "type": "geojson",
+          "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw_projects.geojson",
+          "opacity": 0.6
         }
       ]
     }
