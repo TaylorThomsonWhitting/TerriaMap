@@ -13,6 +13,20 @@
       "url": "https://ttwdigitaltwinsfunctions.azurewebsites.net/InitiateGoogleTile"
     },
     {
+      "id": "ttw",
+      "name": "TTW",
+      "type": "group",
+      "members": [
+        {
+          "id": "geotech",
+          "name": "Geotech Projects (Sample)",
+          "type": "geojson",
+          "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw_projects.geojson",
+          "opacity": 0.6
+        }
+      ]
+    },
+    {
       "id": "vic",
       "name": "Victoria",
       "type": "group",
@@ -24,28 +38,6 @@
           "type": "geojson",
           "url": "https://ttwhub.blob.core.windows.net/digtwins/vic.geojson",
           "opacity": 0.3
-        },
-        {
-          "type": "wms",
-          "name": "SRTM 1 sec DEM Image",
-          "url": "http://services.ga.gov.au/gis/services/DEM_SRTM_1Second/MapServer/WMSServer",
-          "rectangle": {
-            "west": 112.93472,
-            "south": -43.65735,
-            "east": 153.63573,
-            "north": -9.0044
-          },
-          "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-          "layers": "Image",
-          "getFeatureInfoFormat": {
-            "type": "xml",
-            "format": "text/xml"
-          },
-          "featureInfoTemplate": {
-            "name": "{{PixelValue}} metres",
-            "template": "{{PixelValue}} metres"
-          },
-          "id": "cXisE8D7"
         },
         {
           "id": "vic_planning",
@@ -67,15 +59,30 @@
           "type": "geojson",
           "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw.geojson",
           "opacity": 0.3
-        },
-        {
-          "id": "nsw_geotech",
-          "name": "NSW Projects",
-          "type": "geojson",
-          "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw_projects.geojson",
-          "opacity": 0.6
         }
       ]
+    },
+    {
+      "type": "wms",
+      "name": "SRTM 1 sec DEM Image",
+      "url": "http://services.ga.gov.au/gis/services/DEM_SRTM_1Second/MapServer/WMSServer",
+      "rectangle": {
+        "west": 112.93472,
+        "south": -43.65735,
+        "east": 153.63573,
+        "north": -9.0044
+      },
+      "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+      "layers": "Image",
+      "getFeatureInfoFormat": {
+        "type": "xml",
+        "format": "text/xml"
+      },
+      "featureInfoTemplate": {
+        "name": "{{PixelValue}} metres",
+        "template": "{{PixelValue}} metres"
+      },
+      "id": "cXisE8D7"
     }
   ],
   "viewerMode": "3d",
