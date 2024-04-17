@@ -8,7 +8,7 @@
   "catalog": [
     {
       "id": "google-tiles",
-      "name": "Google Tiles",
+      "name": "Google Earth 3D Tiles",
       "type": "3d-tiles",
       "url": "https://ttwdigitaltwinsfunctions.azurewebsites.net/InitiateGoogleTile"
     },
@@ -19,7 +19,7 @@
       "members": [
         {
           "id": "geotech",
-          "name": "Geotech Projects (Sample)",
+          "name": "Geotech Reports (Sample)",
           "type": "geojson",
           "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw_projects.geojson",
           "opacity": 0.6
@@ -27,23 +27,45 @@
       ]
     },
     {
-      "id": "vic",
-      "name": "Victoria",
+      "id": "au",
+      "name": "Australia",
       "type": "group",
       "isOpen": false,
       "members": [
         {
-          "id": "vic_rainfall",
-          "name": "Victoria Rainfall",
-          "type": "geojson",
-          "url": "https://ttwhub.blob.core.windows.net/digtwins/vic.geojson",
-          "opacity": 0.3
+          "id": "au_elevation",
+          "name": "Elevation and Depth",
+          "type": "group",
+          "members": [
+            {
+              "type": "wms",
+              "name": "SRTM 1 sec DEM Image",
+              "url": "http://services.ga.gov.au/gis/services/DEM_SRTM_1Second/MapServer/WMSServer",
+              "rectangle": {
+                "west": 112.93472,
+                "south": -43.65735,
+                "east": 153.63573,
+                "north": -9.0044
+              },
+              "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+              "layers": "Image",
+              "getFeatureInfoFormat": {
+                "type": "xml",
+                "format": "text/xml"
+              },
+              "featureInfoTemplate": {
+                "name": "{{PixelValue}} metres",
+                "template": "{{PixelValue}} metres"
+              },
+              "id": "cXisE8D7"
+            }
+          ]
         },
         {
-          "id": "vic_planning",
-          "name": "Vic Planning",
-          "type": "esri-group",
-          "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services"
+          "id": "ga_surface_geology",
+          "name": "Surface Geology (Geosciences Australia)",
+          "type": "wms-group",
+          "url": "https://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer/WMSServer"
         }
       ]
     },
@@ -59,30 +81,67 @@
           "type": "geojson",
           "url": "https://ttwhub.blob.core.windows.net/digtwins/nsw.geojson",
           "opacity": 0.3
+        },
+        {
+          "id": "nsw_planning",
+          "name": "NSW Planning",
+          "type": "group",
+          "isOpen": false,
+          "members": [
+            {
+              "id": "nsw_principal_planning",
+              "name": "Principal Planning",
+              "type": "esri-group",
+              "url": "https://api.apps1.nsw.gov.au/planning/arcgis/V1/rest/services/ePlanning/Planning_Portal_Principal_Planning/MapServer"
+            },
+            {
+              "id": "nsw_administration",
+              "name": "Administration",
+              "type": "esri-group",
+              "url": "https://api.apps1.nsw.gov.au/planning/arcgis/V1/rest/services/ePlanning/Planning_Portal_Administration/MapServer"
+            },
+            {
+              "id": "nsw_local_provisions",
+              "name": "Local Provisions",
+              "type": "esri-group",
+              "url": "https://api.apps1.nsw.gov.au/planning/arcgis/V1/rest/services/ePlanning/Planning_Portal_Local_Provisions/MapServer"
+            },
+            {
+              "id": "nsw_protection",
+              "name": "Protection",
+              "type": "esri-group",
+              "url": "https://api.apps1.nsw.gov.au/planning/arcgis/V1/rest/services/ePlanning/Planning_Portal_Protection/MapServer"
+            },
+            {
+              "id": "nsw_sepp",
+              "name": "State Environmental Planning Policies",
+              "type": "esri-group",
+              "url": "https://api.apps1.nsw.gov.au/planning/arcgis/V1/rest/services/ePlanning/Planning_Portal_SEPP/MapServer"
+            }
+          ]
         }
       ]
     },
     {
-      "type": "wms",
-      "name": "SRTM 1 sec DEM Image",
-      "url": "http://services.ga.gov.au/gis/services/DEM_SRTM_1Second/MapServer/WMSServer",
-      "rectangle": {
-        "west": 112.93472,
-        "south": -43.65735,
-        "east": 153.63573,
-        "north": -9.0044
-      },
-      "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-      "layers": "Image",
-      "getFeatureInfoFormat": {
-        "type": "xml",
-        "format": "text/xml"
-      },
-      "featureInfoTemplate": {
-        "name": "{{PixelValue}} metres",
-        "template": "{{PixelValue}} metres"
-      },
-      "id": "cXisE8D7"
+      "id": "vic",
+      "name": "VIC",
+      "type": "group",
+      "isOpen": false,
+      "members": [
+        {
+          "id": "vic_rainfall",
+          "name": "VIC Rainfall",
+          "type": "geojson",
+          "url": "https://ttwhub.blob.core.windows.net/digtwins/vic.geojson",
+          "opacity": 0.3
+        },
+        {
+          "id": "vic_planning",
+          "name": "NSW Planning",
+          "type": "esri-group",
+          "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services"
+        }
+      ]
     }
   ],
   "viewerMode": "3d",
