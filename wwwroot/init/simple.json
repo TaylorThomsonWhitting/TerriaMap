@@ -130,16 +130,87 @@
       "members": [
         {
           "id": "vic_rainfall",
-          "name": "VIC Rainfall",
+          "name": "Vic Rainfall",
           "type": "geojson",
           "url": "https://ttwhub.blob.core.windows.net/digtwins/vic.geojson",
           "opacity": 0.3
         },
         {
           "id": "vic_planning",
-          "name": "NSW Planning",
+          "name": "Vic Planning",
           "type": "esri-group",
-          "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services"
+          "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/Vicplan_PlanningSchemeOverlays/MapServer",
+          "excludeMembers": ["All Overlays"],
+          "members": [
+            {
+              "id": "vic_heritage",
+              "name": "Heritage",
+              "type": "group",
+              "members": [
+                {
+                  "id": "vic_heritage_inventory",
+                  "name": "Heritage Inventory",
+                  "type": "esri-mapServer",
+                  "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_Heritage/MapServer/1"
+                },
+                {
+                  "id": "vic_heritage_register",
+                  "name": "Heritage Register",
+                  "type": "esri-mapServer",
+                  "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_Heritage/MapServer/2"
+                },
+                {
+                  "id": "vic_heritage_aboriginal_cultural_heritage_sensitivity",
+                  "name": "Aboriginal Cultural Heritage Sensitivity",
+                  "type": "esri-mapServer",
+                  "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_Heritage/MapServer/3"
+                },
+                {
+                  "id": "vic_heritage_registered_aboriginal_parties",
+                  "name": "Registered Aboriginal Parties",
+                  "type": "esri-mapServer",
+                  "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_Heritage/MapServer/4"
+                },
+                {
+                  "id": "vic_heritage_recognition_and_settlement_agreement",
+                  "name": "Heritage Recognition and Settlement Agreement",
+                  "type": "esri-mapServer",
+                  "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_Heritage/MapServer/6"
+                }
+              ]
+            },
+            {
+              "id": "vic_biodiversity",
+              "name": "Biodiversity",
+              "type": "group",
+              "members": [
+                {
+                  "name": "Conservation Strategy",
+                  "type": "esri-mapServer",
+                  "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/Biodiversity_Conservation_Strategy/MapServer/0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vic_surface_geology",
+          "name": "Surface Geology",
+          "type": "group",
+          "members": [
+            {
+              "name": "Geological polygons (1:4000000)",
+              "type": "wms",
+              "url": "https://opendata.maps.vic.gov.au/geoserver/wms",
+              "layers": "geol4m_polygon"
+            }
+          ]
+        },
+        {
+          "id": "vic_unearthed",
+          "name": "Vic Unearthed",
+          "type": "esri-group",
+          "url": "https://corp-gis.mapshare.vic.gov.au/arcgis/rest/services/VictoriaUnearthed/VicUnearthed/MapServer"
         }
       ]
     }
