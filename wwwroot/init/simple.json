@@ -129,6 +129,97 @@
       "isOpen": false,
       "members": [
         {
+          "id": "melbourne",
+          "name": "Melbourne",
+          "type": "group",
+          "members": [
+            {
+              "id": "birrarung_label",
+              "name": "Birrarung Label",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Birrarung label.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_falls",
+              "name": "Falls",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Falls.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_historic_creek_pattern",
+              "name": "Historic Creek Pattern",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic creek pattern.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_historic_creek",
+              "name": "Historic Creek",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic creek.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_historic_features",
+              "name": "Historic Features",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic features.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_historic_lakes",
+              "name": "Historic Lakes",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic lakes.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_historic_river_patterns",
+              "name": "Historic River Patterns",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic river pattern.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_historic_river",
+              "name": "Historic River",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic river.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_historic_wetlands",
+              "name": "Historic Wetlands",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic wetlands.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_tea_tree_shrug",
+              "name": "Historic Tea Tree Shrub",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Tea tree shrub.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_woods",
+              "name": "Woods",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Woods.geojson",
+              "opacity": 0.6
+            },
+            {
+              "id": "melbourne_location_symbols",
+              "name": "Location Symbols",
+              "type": "geojson",
+              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/location-symbols.geojson",
+              "opacity": 0.6
+            }
+          ]
+        },
+        {
           "id": "vic_rainfall",
           "name": "Vic Rainfall",
           "type": "geojson",
@@ -194,6 +285,19 @@
           ]
         },
         {
+          "id": "vic_roads",
+          "name": "Vic Roads",
+          "type": "group",
+          "members": [
+            {
+              "name": "Declared Roads",
+              "type": "esri-mapServer",
+              "url": "https://vicdata.vicroads.vic.gov.au/server/rest/services/MODR/Declared_Roads/MapServer",
+              "layers": "geol4m_polygon"
+            }
+          ]
+        },
+        {
           "id": "vic_surface_geology",
           "name": "Surface Geology",
           "type": "group",
@@ -210,7 +314,21 @@
           "id": "vic_unearthed",
           "name": "Vic Unearthed",
           "type": "esri-group",
-          "url": "https://corp-gis.mapshare.vic.gov.au/arcgis/rest/services/VictoriaUnearthed/VicUnearthed/MapServer"
+          "url": "https://corp-gis.mapshare.vic.gov.au/arcgis/rest/services/VictoriaUnearthed/VicUnearthed/MapServer",
+          "excludeMembers": [
+            "SANDS MCDOUGALL 1974",
+            "SANDS MCDOUGALL 1965",
+            "SANDS MCDOUGALL 1955",
+            "SANDS MCDOUGALL 1945",
+            "SANDS MCDOUGALL 1935",
+            "SANDS MCDOUGALL 1925",
+            "SANDS MCDOUGALL 1915",
+            "SANDS MCDOUGALL 1905",
+            "SANDS MCDOUGALL 1896",
+            "EPA Audit",
+            "EPA PRSA",
+            "EPA Licence"
+          ]
         }
       ]
     }
