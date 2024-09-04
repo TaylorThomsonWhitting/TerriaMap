@@ -46,7 +46,7 @@
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "",
-      "<a target=\"_blank\" style=\"margin: 0 10px 10px 0px;\" href=\"https://hub.ttw.com.au/models\"><img src=\"images/ttw-models-logo.png\" height=\"72\"  title=\"Version: {{version}}\" /></a>",
+      "<a target=\"_blank\" style=\"margin: 0 10px 10px 0px;\" href=\"https://hub.ttw.com.au/models\"><img src=\"images/ttw-geospatial.png\" height=\"72\"  title=\"Version: {{version}}\" /></a>",
       ""
     ],
     // Shown when things go wrong.

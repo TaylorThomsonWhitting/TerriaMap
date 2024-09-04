@@ -130,92 +130,99 @@
       "members": [
         {
           "id": "melbourne",
-          "name": "Melbourne",
+          "name": "City of Melbourne",
           "type": "group",
           "members": [
             {
-              "id": "birrarung_label",
-              "name": "Birrarung Label",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Birrarung label.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_falls",
-              "name": "Falls",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Falls.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_historic_creek_pattern",
-              "name": "Historic Creek Pattern",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic creek pattern.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_historic_creek",
-              "name": "Historic Creek",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic creek.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_historic_features",
-              "name": "Historic Features",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic features.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_historic_lakes",
-              "name": "Historic Lakes",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic lakes.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_historic_river_patterns",
-              "name": "Historic River Patterns",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic river pattern.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_historic_river",
-              "name": "Historic River",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic river.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_historic_wetlands",
-              "name": "Historic Wetlands",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic wetlands.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_tea_tree_shrug",
-              "name": "Historic Tea Tree Shrub",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Tea tree shrub.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_woods",
-              "name": "Woods",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Woods.geojson",
-              "opacity": 0.6
-            },
-            {
-              "id": "melbourne_location_symbols",
-              "name": "Location Symbols",
-              "type": "geojson",
-              "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/location-symbols.geojson",
-              "opacity": 0.6
+              "id": "aboriginal_melbourne",
+              "name": "Aboriginal Melbourne",
+              "type": "group",
+              "members": [
+                {
+                  "id": "birrarung_label",
+                  "name": "Birrarung Label",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Birrarung label.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_falls",
+                  "name": "Falls",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Falls.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_historic_creek_pattern",
+                  "name": "Historic Creek Pattern",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic creek pattern.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_historic_creek",
+                  "name": "Historic Creek",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic creek.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_historic_features",
+                  "name": "Historic Features",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic features.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_historic_lakes",
+                  "name": "Historic Lakes",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic lakes.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_historic_river_patterns",
+                  "name": "Historic River Patterns",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic river pattern.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_historic_river",
+                  "name": "Historic River",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic river.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_historic_wetlands",
+                  "name": "Historic Wetlands",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Historic wetlands.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_tea_tree_shrug",
+                  "name": "Historic Tea Tree Shrub",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Tea tree shrub.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_woods",
+                  "name": "Woods",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/Woods.geojson",
+                  "opacity": 0.6
+                },
+                {
+                  "id": "melbourne_location_symbols",
+                  "name": "Location Symbols",
+                  "type": "geojson",
+                  "url": "https://ttwhub.blob.core.windows.net/digtwins/melbourne/location-symbols.geojson",
+                  "opacity": 0.6
+                }
+              ]
             }
           ]
         },
