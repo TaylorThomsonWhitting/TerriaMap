@@ -238,9 +238,7 @@
           "name": "Vic Planning",
           "type": "esri-group",
           "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/Vicplan_PlanningSchemeOverlays/MapServer",
-          "excludeMembers": [
-            "All Overlays"
-          ],
+          "excludeMembers": ["All Overlays"],
           "members": [
             {
               "id": "vic_planning_scheme",
