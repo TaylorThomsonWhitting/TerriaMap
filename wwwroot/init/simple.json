@@ -238,12 +238,29 @@
           "name": "Vic Planning",
           "type": "esri-group",
           "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/Vicplan_PlanningSchemeOverlays/MapServer",
-          "excludeMembers": ["All Overlays"],
+          "excludeMembers": [
+            "All Overlays"
+          ],
           "members": [
+            {
+              "id": "vic_planning_scheme",
+              "name": "Planning Scheme",
+              "type": "esri-mapServer-group",
+              "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/Vicplan_PlanningSchemeOverlays/MapServer",
+              "displayGroup": true
+            },
+            {
+              "id": "vic_growth_areas",
+              "name": "Growth Areas",
+              "type": "esri-mapServer-group",
+              "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_GrowthAreas/MapServer",
+              "displayGroup": true
+            },
             {
               "id": "vic_heritage",
               "name": "Heritage",
               "type": "group",
+              "displayGroup": true,
               "members": [
                 {
                   "id": "vic_heritage_inventory",
@@ -278,9 +295,72 @@
               ]
             },
             {
+              "id": "vic_bushfire",
+              "name": "Bushfire",
+              "type": "esri-mapServer-group",
+              "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_Bushfire/MapServer",
+              "displayGroup": true
+            },
+            {
+              "id": "vic_water_and_catchment",
+              "name": "Water and Catchment",
+              "type": "group",
+              "displayGroup": true,
+              "members": [
+                {
+                  "id": "vic_heritage_special_water_supply_catchment_areas",
+                  "name": "Special Water Supply Catchment Areas",
+                  "type": "esri-mapServer",
+                  "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_Special_Water_Supply_Catchment_Areas/MapServer/0"
+                }
+              ]
+            },
+            {
+              "id": "vic_airport",
+              "name": "Airports",
+              "type": "esri-mapServer-group",
+              "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/Melbourne_Airport_Master_Plan_2022_VicPlan/MapServer",
+              "displayGroup": true
+            },
+            {
+              "id": "vic_transport",
+              "name": "Transport",
+              "type": "esri-mapServer-group",
+              "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_Transport/MapServer",
+              "displayGroup": true
+            },
+            {
+              "id": "vic_property",
+              "name": "Property",
+              "type": "esri-mapServer-group",
+              "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_PropertyAndParcel/MapServer",
+              "displayGroup": true
+            },
+            {
+              "id": "vic_admin",
+              "name": "Administration",
+              "type": "group",
+              "displayGroup": true,
+              "members": [
+                {
+                  "id": "vic_lga",
+                  "name": "Local Goverment Areas",
+                  "type": "esri-mapServer",
+                  "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_Other/MapServer/1"
+                },
+                {
+                  "id": "vic_electoral_boundaries",
+                  "name": "Electoral Boundaries",
+                  "type": "esri-mapServer",
+                  "url": "https://plan-gis.mapshare.vic.gov.au/arcgis/rest/services/Planning/VicPlan_Other/MapServer/2"
+                }
+              ]
+            },
+            {
               "id": "vic_biodiversity",
               "name": "Biodiversity",
               "type": "group",
+              "displayGroup": true,
               "members": [
                 {
                   "name": "Conservation Strategy",
