@@ -414,6 +414,47 @@
             "EPA PRSA",
             "EPA Licence"
           ]
+        },
+        {
+          "id": "vic_traffic",
+          "name": "Vic Traffic",
+          "type": "group",
+          "members": [
+            {
+              "name": "Traffic Volume",
+              "type": "esri-featureServer",
+              "url": "https://vicdata.vicroads.vic.gov.au/server/rest/services/Operations_Traffic/FeatureServer/0"
+            },
+            {
+              "name": "Traffic Signals",
+              "type": "esri-featureServer",
+              "url": "https://services2.arcgis.com/18ajPSI0b3ppsmMt/arcgis/rest/services/traffic_lights/FeatureServer/0"
+            },
+            {
+              "name": "Principal Bicycle Network",
+              "type": "esri-featureServer",
+              "url": "https://vicdata.vicroads.vic.gov.au/server/rest/services/Hosted/Principal_Bicycle_Network/FeatureServer/0"
+            },
+            {
+              "id": "vic_traffic",
+              "name": "Vic Traffic",
+              "type": "group",
+              "members": [
+                {
+                  "name": "PTV Metro Bus Routes",
+                  "type": "wms",
+                  "url": "https://opendata.maps.vic.gov.au/geoserver/wms",
+                  "layers": "ptv_metro_bus_route"
+                },
+                {
+                  "name": "PTV Metro Bus Stops",
+                  "type": "wms",
+                  "url": "https://opendata.maps.vic.gov.au/geoserver/wms",
+                  "layers": "ptv_metro_bus_stop"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

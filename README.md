@@ -2,6 +2,13 @@
 
 [![Build and Copy to Azure](https://github.com/TaylorThomsonWhitting/TTW.DigitalTwins/actions/workflows/build-and-copy-to-azure.yml/badge.svg)](https://github.com/TaylorThomsonWhitting/TTW.DigitalTwins/actions/workflows/build-and-copy-to-azure.yml)
 
+## Catalogue
+
+The default catalogue that is loaded on startup can be found at `wwwroot/init/simple.json`.
+Updating this file and pushing the changes will automatically redeploy the app with the new catalogue.
+
+For immediate updates, temporary changes, or testing, the `simple.json` can be edited directly on the server using the Azure portal's SSH tool on the `ttw-terriajs-server` Web App. **Note**: These changes will be overwritten the next time a change is pushed on Github.
+
 ## Build and Develop
 
 Refer to [Terria Development Environment](https://docs.terria.io/guide/contributing/development-environment/) page for details.
