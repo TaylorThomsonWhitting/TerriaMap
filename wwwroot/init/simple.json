@@ -436,8 +436,8 @@
               "url": "https://vicdata.vicroads.vic.gov.au/server/rest/services/Hosted/Principal_Bicycle_Network/FeatureServer/0"
             },
             {
-              "id": "vic_traffic",
-              "name": "Vic Traffic",
+              "id": "vic_ptv_metro_bus_data",
+              "name": "PTV Metro Bus Data",
               "type": "group",
               "members": [
                 {
