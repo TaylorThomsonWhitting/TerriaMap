@@ -1,6 +1,6 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": ["simple"],
+  "initializationUrls": ["https://ttwhub.blob.core.windows.net/digtwins/config.json"],
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
